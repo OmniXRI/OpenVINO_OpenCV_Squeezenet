@@ -25,3 +25,5 @@ squeezenet_v1.1.caffemodel Squeezenet v1.1 Caffe格式權重檔
 比較SqueezeNet Version 1.1使用OpenVINO Inferenc Engin配合IR(xml, bin) 優化模型, OpenCV直接讀取IR(xml, bin) 優化模型及OpenCV直接讀取Caffe原始模型執行效率差異。
 
 Squeezenet_compare_result.txt 使用相同CPU執行三種方式比較結果檔案。
+
+更多完整說明待更新…
