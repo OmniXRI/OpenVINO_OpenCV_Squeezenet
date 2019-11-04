@@ -1,0 +1,58 @@
+*** OpenVINO CPU ***
+
+C:\Program Files (x86)\IntelSWTools\openvino_2019.2.242\inference_engine\samples\python_samples\classification_sample>python classification_openvino.py
+classid probability label
+------- ----------- -----
+817     0.8364178   car, sport car
+511     0.0945683   convertible
+479     0.0419195   wheel
+751     0.0091233   race car, racing car
+436     0.0068038   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+inital time = 0.0092 sec.
+load image time = 0.0050 sec.
+load model time = 0.1474 sec.
+inference time = 0.0091 sec.
+display time = 0.0020 sec.
+total time = 0.1727 sec.
+
+
+*** OpenCV IR CPU ***
+
+C:\Program Files (x86)\IntelSWTools\openvino_2019.2.242\inference_engine\samples\python_samples\classification_sample>python classification_opencv_ir.py
+classid probability label
+------- ----------- -----
+817     0.8364178   car, sport car
+511     0.0945683   convertible
+479     0.0419195   wheel
+751     0.0091233   race car, racing car
+436     0.0068038   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+load model time = 0.006 sec.
+load image time = 0.005 sec.
+setting model time = 0.001 sec.
+inference time = 0.152 sec.
+display time = 0.002 sec.
+total time = 0.165 sec.
+
+
+*** OpenCV Caffe CPU ***
+
+C:\Program Files (x86)\IntelSWTools\openvino_2019.2.242\inference_engine\samples\python_samples\classification_sample>python classification_opencv_caffe.py
+classid probability label
+------- ----------- -----
+817     0.8363342   car, sport car
+511     0.0946487   convertible
+479     0.0419130   wheel
+751     0.0091071   race car, racing car
+436     0.0068161   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+load model time = 0.012 sec.
+load image time = 0.005 sec.
+setting model time = 0.001 sec.
+inference time = 0.165 sec.
+display time = 0.009 sec.
+total time = 0.193 sec.
