@@ -19,10 +19,10 @@ model_bin = "squeezenet1.1.bin"
 # 載入優化模型
 net = cv2.dnn.readNetFromModelOptimizer(model_xml, model_bin); # 讀取IR
 
-# 設定後端 DNN_BACKEND_DEFAULT, DNN_BACKEND_HALIDE, DNN_BACKEND_INFERENCE_ENGINE, DNN_BACKEND_OPENCV, DNN_BACKEND_VKCOM
+# 設定後端(只能指定DNN_BACKEND_INFERENCE_ENGINE)
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_INFERENCE_ENGINE)
 
-# 設定目標執行裝置 DNN_TARGET_CPU, DNN_TARGET_OPENCL, DNN_TARGET_OPENCL_FP16, DNN_TARGET_MYRIAD, DNN_TARGET_VULKAN, DNN_TARGET_FPGA
+# 設定目標執行裝置 DNN_TARGET_CPU, DNN_TARGET_OPENCL, DNN_TARGET_OPENCL_FP16, DNN_TARGET_MYRIAD, DNN_TARGET_FPGA
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
 
 time_1 = time.clock()
@@ -37,7 +37,7 @@ out_blob = cv2.dnn.blobFromImage(image, # 輸入影像
                                 scalefactor=1.0, # 輸入資料尺度
                                 size=(227, 227), # 輸出影像尺寸
                                 mean=(0, 0, 0), # 從各通道減均值
-                                swapRB=False, # R、B通道是否交換i
+                                swapRB=False, # R、B通道是否交換
                                 crop=False) # 是否截切
 
 # 設定網路

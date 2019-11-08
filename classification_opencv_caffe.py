@@ -32,14 +32,12 @@ image = cv2.imread("car.png")
 
 time_2 = time.clock()
 
-#blob = cv2.dnn.blobFromImage(cv2.resize(frame, (300, 300)), 0.007843, (300, 300), 127.5)
-
 # 設定輸出格式 [1, 3, 227, 227]
 out_blob = cv2.dnn.blobFromImage(image, # 輸入影像
                                 scalefactor=1.0, # 輸入資料尺度
                                 size=(227, 227), # 輸出影像尺寸
                                 mean=(0, 0, 0), # 從各通道減均值
-                                swapRB=False, # R、B通道是否交換i
+                                swapRB=False, # R、B通道是否交換
                                 crop=False) # 是否截切
 
 # 設定網路
