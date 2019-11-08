@@ -1,0 +1,64 @@
+測試環境：
+
+CPU : Intel i7-9750 2.6GHz
+RAM : 8GB DDR4
+GPU : Intel UHD Graphics 630
+OS  : Win10 64bit
+
+測試結果
+
+****** OpenVINO Inference Engin device:CPU *****
+
+classid probability label
+------- ----------- -----
+817     0.8364178   car, sport car
+511     0.0945683   convertible
+479     0.0419195   wheel
+751     0.0091233   race car, racing car
+436     0.0068038   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+inital time = 0.0801 sec.
+load image time = 0.0084 sec.
+load model time = 0.3403 sec.
+inference time = 0.0242 sec.
+display time = 0.0085 sec.
+total time = 0.4615 sec.
+
+
+****** OpenVINO Inference Engin device:GPU *****
+
+classid probability label
+------- ----------- -----
+817     0.8398438   car, sport car
+511     0.0943604   convertible
+479     0.0393066   wheel
+751     0.0087662   race car, racing car
+436     0.0070610   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+inital time = 0.0095 sec.
+load image time = 0.0052 sec.
+load model time = 7.2073 sec.
+inference time = 0.0077 sec.
+display time = 0.0066 sec.
+total time = 7.2363 sec.
+
+
+****** OpenVINO Inference Engin device:MYRIAD (NSC1) *****
+
+classid probability label
+------- ----------- -----
+817     0.8422852   car, sport car
+511     0.0915527   convertible
+479     0.0393982   wheel
+751     0.0093536   race car, racing car
+436     0.0068550   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+inital time = 0.0087 sec.
+load image time = 0.0055 sec.
+load model time = 3.8700 sec.
+inference time = 0.0321 sec.
+display time = 0.0165 sec.
+total time = 3.9329 sec.

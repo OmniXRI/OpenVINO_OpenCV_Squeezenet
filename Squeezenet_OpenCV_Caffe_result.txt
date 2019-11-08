@@ -1,0 +1,64 @@
+測試環境：
+
+CPU : Intel i7-9750 2.6GHz
+RAM : 8GB DDR4
+GPU : Nvidia GTX1050Ti 4GB
+OS  : Win10 64bit
+
+測試結果
+
+***** OpenCV readNetFromCaffe DNN_BACKEND_OPENCV DNN_TARGET_CPU ******
+
+classid probability label
+------- ----------- -----
+817     0.8363350   car, sport car
+511     0.0946481   convertible
+479     0.0419132   wheel
+751     0.0091071   race car, racing car
+436     0.0068161   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+load model time = 0.0231 sec.
+load image time = 0.0050 sec.
+setting model time = 0.0007 sec.
+inference time = 0.0323 sec.
+display time = 0.0090 sec.
+total time = 0.0701 sec.
+
+
+***** OpenCV readNetFromCaffe DNN_BACKEND_OPENCV DNN_TARGET_OPENCL (GPU) ******
+
+classid probability label
+------- ----------- -----
+817     0.8363332   car, sport car
+511     0.0946493   convertible
+479     0.0419136   wheel
+751     0.0091072   race car, racing car
+436     0.0068162   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+load model time = 1.7187 sec.
+load image time = 0.0053 sec.
+setting model time = 0.0016 sec.
+inference time = 0.2610 sec.
+display time = 0.0084 sec.
+total time = 1.9950 sec.
+
+
+***** OpenCV readNetFromCaffe DNN_BACKEND_OPENCV DNN_TARGET_OPENCL_FP16 (GPU) ******
+
+classid probability label
+------- ----------- -----
+817     0.8363332   car, sport car
+511     0.0946493   convertible
+479     0.0419136   wheel
+751     0.0091072   race car, racing car
+436     0.0068162   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+load model time = 1.0395 sec.
+load image time = 0.0049 sec.
+setting model time = 0.0009 sec.
+inference time = 0.1462 sec.
+display time = 0.0087 sec.
+total time = 1.2002 sec.

@@ -1,0 +1,83 @@
+測試環境：
+
+CPU : Intel i7-9750 2.6GHz
+RAM : 8GB DDR4
+GPU : Intel UHD Graphics 630
+OS  : Win10 64bit
+
+測試結果
+
+***** OpenCV readNetFromCaffe DNN_BACKEND_INFERENCE_ENGIN DNN_TARGET_CPU ******
+
+classid probability label
+------- ----------- -----
+817     0.8363342   car, sport car
+511     0.0946487   convertible
+479     0.0419130   wheel
+751     0.0091071   race car, racing car
+436     0.0068161   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+load model time = 0.0109 sec.
+load image time = 0.0045 sec.
+setting model time = 0.0007 sec.
+inference time = 0.1947 sec.
+display time = 0.0036 sec.
+total time = 0.2143 sec.
+
+
+***** OpenCV readNetFromCaffe DNN_BACKEND_INFERENCE_ENGIN DNN_TARGET_OPENCL (GPU) ******
+
+classid probability label
+------- ----------- -----
+817     0.8363334   car, sport car
+511     0.0946490   convertible
+479     0.0419135   wheel
+751     0.0091071   race car, racing car
+436     0.0068161   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+load model time = 1.0415 sec.
+load image time = 0.0049 sec.
+setting model time = 0.0012 sec.
+inference time = 5.0929 sec.
+display time = 0.0066 sec.
+total time = 6.1471 sec.
+
+
+***** OpenCV readNetFromCaffe DNN_BACKEND_INFERENCE_ENGIN DNN_TARGET_OPENCL_FP16 (GPU) ******
+
+classid probability label
+------- ----------- -----
+817     0.8363334   car, sport car
+511     0.0946490   convertible
+479     0.0419135   wheel
+751     0.0091071   race car, racing car
+436     0.0068161   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+load model time = 0.9959 sec.
+load image time = 0.0063 sec.
+setting model time = 0.0011 sec.
+inference time = 5.0941 sec.
+display time = 0.0068 sec.
+total time = 6.1042 sec.
+
+
+***** OpenCV readNetFromCaffe DNN_BACKEND_INFERENCE_ENGIN DNN_TARGET_MYRIAD (NSC1) ******
+
+classid probability label
+------- ----------- -----
+817     0.8422852   car, sport car
+511     0.0915527   convertible
+479     0.0393982   wheel
+751     0.0093536   race car, racing car
+436     0.0068550   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+load model time = 0.0105 sec.
+load image time = 0.0046 sec.
+setting model time = 0.0007 sec.
+inference time = 1.5799 sec.
+display time = 0.0120 sec.
+total time = 1.6078 sec.

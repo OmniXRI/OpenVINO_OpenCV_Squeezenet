@@ -1,0 +1,63 @@
+測試環境：
+
+CPU : Intel i7-9750 2.6GHz
+RAM : 8GB DDR4
+OS  : Win10 64bit
+
+測試結果
+
+****** OpenVINO Inference Engin device:CPU *****
+
+classid probability label
+------- ----------- -----
+817     0.8364178   car, sport car
+511     0.0945683   convertible
+479     0.0419195   wheel
+751     0.0091233   race car, racing car
+436     0.0068038   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+inital time = 0.0801 sec.
+load image time = 0.0084 sec.
+load model time = 0.3403 sec.
+inference time = 0.0242 sec.
+display time = 0.0085 sec.
+total time = 0.4615 sec.
+
+
+***** OpenCV readNetFromInfereceEngin DNN_BACKEND_INFERENCE_ENGIN DNN_TARGET_CPU *****
+
+classid probability label
+------- ----------- -----
+817     0.8364178   car, sport car
+511     0.0945683   convertible
+479     0.0419195   wheel
+751     0.0091233   race car, racing car
+436     0.0068038   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+load model time = 0.0152 sec.
+load image time = 0.0057 sec.
+setting model time = 0.0009 sec.
+inference time = 0.1735 sec.
+display time = 0.0089 sec.
+total time = 0.2043 sec.
+
+
+***** OpenCV readNetFromCaffe DNN_BACKEND_OPENCV DNN_TARGET_CPU ******
+
+classid probability label
+------- ----------- -----
+817     0.8363350   car, sport car
+511     0.0946481   convertible
+479     0.0419132   wheel
+751     0.0091071   race car, racing car
+436     0.0068161   wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+
+load model time = 0.0231 sec.
+load image time = 0.0050 sec.
+setting model time = 0.0007 sec.
+inference time = 0.0323 sec.
+display time = 0.0090 sec.
+total time = 0.0701 sec.
