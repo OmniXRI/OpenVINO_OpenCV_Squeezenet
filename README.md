@@ -19,5 +19,6 @@ Squeezenet_cpu_result.txt 使用相同CPU執行OpenVINO, OpenCV+IR, OpenCV+Caffe
 Squeezenet_openvino_result.txt 使用OpenVINO, 分別以CPU, GPU, VPU三種裝置比較結果檔案。  
 Squeezenet_opencv_IE_result.txt 使用OpenCV+IR, 分別以CPU, GPU(OPENCL, OPENCL_FP16)三種裝置比較結果檔案。  
 Squeezenet_opencv_Caffe_result.txt 使用OpenCV+Caffe, 分別以CPU, GPU(OPENCL, OPENCL_FP16)三種裝置比較結果檔案。
+Squeezenet_Compare_Table.xlsx 所有比較表
 
 更多完整說明待更新…
