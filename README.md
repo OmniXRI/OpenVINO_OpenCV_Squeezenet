@@ -21,4 +21,4 @@ Squeezenet_opencv_IE_result.txt 使用OpenCV+IR, 分別以CPU, GPU(OPENCL, OPENC
 Squeezenet_opencv_Caffe_result.txt 使用OpenCV+Caffe, 分別以CPU, GPU(OPENCL, OPENCL_FP16)三種裝置比較結果檔案。  
 Squeezenet_Compare_Table.xlsx 所有比較表
 
-更多完整說明待更新…
+#更完整的說明請參考 https://omnixri.blogspot.com/2019/11/openvinoopencv.html
