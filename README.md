@@ -1,5 +1,7 @@
 # OpenVINO_OpenCV_Squeezenet
 
+![image](https://github.com/OmniXRI/OpenVINO_OpenCV_Squeezenet/blob/master/openvino_opencv_Fig01.jpg)
+
 檔案內容說明：
 
 classification_sample.py OpenVINO原始範例  
