@@ -74,9 +74,9 @@ for i, probs in enumerate(res):
 
 time_5 = time.clock()
 
-print("load model time = {:.3f} sec.".format(time_1 - time_0))
-print("load image time = {:.3f} sec.".format(time_2 - time_1))
-print("setting model time = {:.3f} sec.".format(time_3 - time_2))
-print("inference time = {:.3f} sec.".format(time_4 - time_3))
-print("display time = {:.3f} sec.".format(time_5 - time_4))
-print("total time = {:.3f} sec.".format(time_5 - time_0))
+print("load model time = {:.4f} sec.".format(time_1 - time_0))
+print("load image time = {:.4f} sec.".format(time_2 - time_1))
+print("setting model time = {:.4f} sec.".format(time_3 - time_2))
+print("inference time = {:.4f} sec.".format(time_4 - time_3))
+print("display time = {:.4f} sec.".format(time_5 - time_4))
+print("total time = {:.4f} sec.".format(time_5 - time_0))

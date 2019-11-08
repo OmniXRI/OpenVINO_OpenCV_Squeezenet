@@ -17,7 +17,13 @@ prototxt = "squeezenet_v1.1.prototxt"
 caffemodel = "squeezenet_v1.1.caffemodel"
 
 # 載入Caffe模型
-net = cv2.dnn.readNetFromCaffe(prototxt, caffemodel);
+net = cv2.dnn.readNetFromCaffe(prototxt, caffemodel)
+
+# 設定後端 DNN_BACKEND_DEFAULT, DNN_BACKEND_HALIDE, DNN_BACKEND_INFERENCE_ENGINE, DNN_BACKEND_OPENCV, DNN_BACKEND_VKCOM
+net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
+
+# 設定目標執行裝置 DNN_TARGET_CPU, DNN_TARGET_OPENCL, DNN_TARGET_OPENCL_FP16, DNN_TARGET_MYRIAD, DNN_TARGET_VULKAN, DNN_TARGET_FPGA
+net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
 
 time_1 = time.clock()
 
@@ -70,9 +76,9 @@ for i, probs in enumerate(res):
 
 time_5 = time.clock()
 
-print("load model time = {:.3f} sec.".format(time_1 - time_0))
-print("load image time = {:.3f} sec.".format(time_2 - time_1))
-print("setting model time = {:.3f} sec.".format(time_3 - time_2))
-print("inference time = {:.3f} sec.".format(time_4 - time_3))
-print("display time = {:.3f} sec.".format(time_5 - time_4))
-print("total time = {:.3f} sec.".format(time_5 - time_0))
+print("load model time = {:.4f} sec.".format(time_1 - time_0))
+print("load image time = {:.4f} sec.".format(time_2 - time_1))
+print("setting model time = {:.4f} sec.".format(time_3 - time_2))
+print("inference time = {:.4f} sec.".format(time_4 - time_3))
+print("display time = {:.4f} sec.".format(time_5 - time_4))
+print("total time = {:.4f} sec.".format(time_5 - time_0))
